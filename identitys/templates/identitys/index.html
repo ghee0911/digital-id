@@ -1,10 +1,18 @@
 <html>
-	<head>
-		<title>Digital ID</title>
-	</head>
+        <head>
+                <title>Digital ID</title>
+        </head>
 
-	<body>
-		<p>It's still under development.</p>
-		<p>Not yet available. Wait please.</p>
-	</body>
+        <body>
+                <div>
+    			<h1><a href="/">Digital ID</a></h1>
+    			<p>Choose what you want</p>
+		</div>
+
+		{% for selection in selection_list %}
+    		<div>
+        		<p><a href="">{{ selection }}</a></p>
+    		</div>
+		{% endfor %}
+        </body>
 </html>
